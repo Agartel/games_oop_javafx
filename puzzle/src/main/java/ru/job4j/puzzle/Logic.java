@@ -72,7 +72,7 @@ public class Logic {
         int[][] table = this.convert();
         boolean result = false;
         int i = 0;
-        while (i * i < table.length && !result) { // Пётр, как можно обратиться
+        while (i * i < table.length && !result) { // Было бы хорошо если бы можно было обратиться к event.getX, что бы не искать точку по горизонтали
             if ( table[i][i] == 1) {
                 for (int index = 0; index < table.length; index++) {
                     if (table[i][index] != 1) {
